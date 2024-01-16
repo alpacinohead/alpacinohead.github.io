@@ -5,3 +5,8 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+// add onclick="addToList()" to the id="SubmitButton" element to enable to code below. Note this cannot save to a file as cannot use Node on GitHub Pages.
+function addToList() {
+    alert(document.getElementById("email").value)
+}
