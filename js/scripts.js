@@ -10,3 +10,4 @@
 function addToList() {
     alert(document.getElementById("email").value)
 }
+

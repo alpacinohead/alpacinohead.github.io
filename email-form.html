@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <!--Form Code--> 
+    <form id="form" action=”mailto:aaronpcjb@gmail.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name">
+        <br />
+        <label for="message">Message:</label>
+        <br>
+        <textarea id=”message” rows=”6″ cols=”20″></textarea>
+        <br>
+        <button type="submit">Submit form</button>
+    </form>
+    <script>
+        function logSubmit(event) {
+            log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
+            event.preventDefault();
+        }
+        
+        const form = document.getElementById("form");
+        const log = document.getElementById("log");
+        form.addEventListener("submit", logSubmit);
+    </script>
+</body>
